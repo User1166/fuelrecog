@@ -6,8 +6,6 @@ import pathlib
 temp = pathlib.PosixPath 
 pathlib.PosixPath = pathlib.WindowsPath
 
-bestfile='bester.py' #WRITE YOUR FİLE NAME HERE
-
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]
 if str(ROOT) not in sys.path: sys.path.append(str(ROOT))
@@ -71,3 +69,4 @@ if __name__ == '__main__':
         pathlib.PosixPath = temp
 
 pathlib.PosixPath = temp
+
